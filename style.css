@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+
+
+.header-menu{}
+.header-menu ul{
+    text-align: center;
+}
+.header-menu ul li{
+    list-style:none;
+    display: inline-block;
+    margin: 5px 3px 8px 0;
+}
+.header-menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: black;
+    background-color: #48dbfb;
+    font-size: 20px;
+    position: relative;
+    transition: .5s;
+    z-index: 1;
+}
+.header-menu ul li a:hover{
+    background-color: white;
+    color: #48dbfb;
+
+}
+.header-menu ul li a::before{
+    content:" ";
+    height: 100%;
+    width: 0;
+    border-bottom:2px solid black ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: -1;
+}
+.header-menu ul li a:hover::before{
+    width: 100%;
+}
+
+/* banner */
+.banner{
+    text-align: center;
+    color: white;
+    background-color: #48dbfb;
+    padding-bottom: 100px;
+}
+.banner h4{
+    padding:100px 0 20px 0;
+    font-size: 25px;
+}
+.banner h1{
+    font-size: 50px;
+    border-left: 1px solid white;
+    display: inline-block;
+}
+.banner button{
+    font-size: 15px;
+    box-flex-group: #ddd;
+    border-radius: 7px;
+    padding: 10px 5px;
+    border: none;
+    color: #a79e9e;
+    position: relative;
+    z-index: 1;
+
+}
+.banner button::before{
+    content:" ";
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: -1;
+}
+
+.banner button:hover{
+    color: #ddd;
+
+}
+.banner button:hover::before{
+    background: #000;
+    width: 100%;
+}
+
+.container{
+    width: 1000px;
+    margin: auto;
+}
+/* contain  */
+.contain{
+    margin: auto;
+}
+.contain .contain-header{
+    text-align: center;
+}
+.contain .contain-header h3{
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 100px;
+    font-family: 'PT Sans', sans-serif;
+}
+.contain .contain-header p{
+    margin-bottom: 80px;
+}
+.contain .contain-img .div1 ,.div2,.div3,.div4,.div5,.div6,.div7,.div8{
+    display: inline-block;
+    height: 200px;
+    width: 200px ;
+    transition: all 1s;
+    position: relative;
+    overflow: hidden;
+
+}
+.ovr{
+    overflow: hidden;
+}
+
+
+.contain .contain-img {
+    width: 1000px;
+    margin: auto;
+    margin-left: 76px;
+}
+.contain .contain-img img{
+    display: inline-block;
+    height: 200px;
+    width: 200px ;
+    margin: 10px;
+}
+.contain .contain-img .img1,.img6{
+    transform: rotate(0deg);
+    transition: 1s;   
+}
+.contain .contain-img .img1:hover,.img6:hover{
+    transform: rotate(360deg);
+    
+}
+.contain .contain-img .img2,.img5{
+    transform:  rotate(0);
+    transition: .2s;
+}
+.contain .contain-img .img2:hover,.img5:hover{
+    transform: rotate(30deg);  
+}
+.contain .contain-img .img3,.img4{
+    transform:  rotate(0);   
+    transition: .2s;
+}
+.contain .contain-img .img3:hover,.img4:hover{
+    transform: rotate(-30deg);
+}
+.contain .contain-img .img7 ,.img8{
+    transform: scale(1,1);  
+    transition: .5s;
+}
+.contain .contain-img .img7:hover,.img8:hover{
+    transform: scale(.8,.8);
+}
+.contain .contain-img .img8{
+    transition: .5s; 
+    transform: scale(1,1); 
+}
+.contain .contain-img .img8:hover{
+    transform: scale(1.2,1.2);
+}
+.footer{
+    text-align: center;
+}
+.footer ul{}
+.footer ul li{
+    display: inline-block;
+}
+.footer ul li a{ 
+    font-size: 20px;
+    padding:10px 10px;
+    margin: 20px 120px;
+    color: #ddd;
+    background: #000;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .5s;
+}
+.footer ul li a:hover{}
+
+.step1 {
+    transform: rotate(-43deg);
+}
+.step1:hover {
+    transform: rotate(0deg);
+    background: #33a6cf;
+    color: #000;
+}
+.step2{
+    transform: scale(1,1);
+}
+.step2:hover{
+    transform: scale(1.1,1.1);
+    background: #33a6cf;
+    color: #000;
+}
+.step3 {
+    transform: rotate(43deg);
+}
+.step3:hover {
+    transform: rotate(0deg);
+    background: #33a6cf;
+    color: #000;
+}
+
+.copy-right{
+    background:#2e2f31  ;
+    text-align: center;
+    color: #ddd;
+    padding: 15px 0;
+}
